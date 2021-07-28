@@ -1,0 +1,6 @@
+FROM clue/redis-benchmark
+run rm -f /run.sh
+ENTRYPOINT ["/bin/bash", "-c"]
+
+#docker build -t benchmark .
+#docker run -ti --rm benchmark redis-benchmark -h host -p port numberofrecords
